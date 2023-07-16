@@ -11,6 +11,8 @@ numpy = "*"
 scikit-learn = "*"
 gunicorn = "*"
 awscli = "*"
+plotly = "*"
+cufflinks = "*"
 
 [dev-packages]
 awsebcli = "*"
