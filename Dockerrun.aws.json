@@ -1,0 +1,15 @@
+{
+    "AWSEBDockerrunVersion": "2",
+    "Image": {
+      "Name": "churn-prediction:latest",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 9696,
+        "HostPort": 9696
+      }
+    ],
+    "Logging": "/Users/TUHIN/repos/telco-customer-churn"
+  }
+  
