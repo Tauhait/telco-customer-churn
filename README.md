@@ -24,32 +24,53 @@ service for the probability of churn, and if it’s high enough, then we send a 
 
 ## Steps
 ✅ Gets the customer data in a request
+
 ✅ Invokes predict_simple to score the customer
+
 ✅ Responds with the probability of churn in JSON
+
 ✅ Packaged the app with Docker and deployed using AWS Elastic Beanstalk
 
 • Assigns the /predict route to the predict function
+
 • Gets the content of the request in JSON
+
 • Scores the customer 
+
 • Prepares the response
+
 • Converts the response to JSON
 
-## Serving flask app
+## Serving Flask app
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="imgs/Serving-Flask.png">
  <source media="(prefers-color-scheme: light)" srcset="imgs/Serving-Flask.png">
  <img alt="Serving-Flask" src="imgs/Serving-Flask.png">
 </picture>
 
+## Serving Docker app
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/serving-docker.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/serving-docker.png">
+ <img alt="Serving-Docker" src="imgs/serving-docker.png">
+</picture>
+
+## Serving Elastic Beanstalk app
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/serving-eb-local.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/serving-eb-local.png">
+ <img alt="Serving-EB" src="imgs/serving-eb-local.png">
+</picture>
+
+## Serving AWS Elastic Beanstalk EC2 app
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/serving-eb-ec2-aws.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/serving-eb-ec2-aws.png">
+ <img alt="Serving-EB" src="imgs/serving-eb-ec2-aws.png">
+</picture>
+
 ## How to setup - install all the required libraries from Pipenv.lock
 > pipenv install
-
-# AWS: https://299721932716.signin.aws.amazon.com/console
-
-## Issues to look out for - 
-• https://github.com/awsdocs/aws-elastic-beanstalk-developer-guide/issues/149
-• https://stackoverflow.com/questions/52600066/aws-elastic-beanstalk-100-0-of-the-requests-are-erroring-with-http-4xx 
-
 
 ### Commands
 To connect to AWS EC2 instance:
@@ -65,3 +86,8 @@ AWS Elastic Beanstalk create env, run locally and remote:
 > eb init -p docker churn-serving
 > eb local run --port 9696
 > eb create churn-serving-env
+
+## Issues to look out for - 
+• https://github.com/awsdocs/aws-elastic-beanstalk-developer-guide/issues/149
+
+• https://stackoverflow.com/questions/52600066/aws-elastic-beanstalk-100-0-of-the-requests-are-erroring-with-http-4xx 

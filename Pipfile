@@ -13,6 +13,12 @@ gunicorn = "*"
 awscli = "*"
 plotly = "*"
 cufflinks = "*"
+streamlit = "*"
+matplotlib = "*"
+nbformat = "*"
+notebook = ">=5.3"
+ipywidgets = ">=7.5"
+statsmodels = "*"
 
 [dev-packages]
 awsebcli = "*"
