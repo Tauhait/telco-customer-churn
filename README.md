@@ -8,8 +8,16 @@ Suppose we have a service for running marketing campaigns. For each customer, it
 
 ## Tested the working of the app 
 ✅ Flask web service
+
 ✅ Docker 
-✅ AWS Elastic Beanstalk
+
+✅ AWS EC2 & Elastic Beanstalk
+
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/prediction-using-aws-eb-ec2.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/prediction-using-aws-eb-ec2.png">
+ <img alt="churn" src="imgs/prediction-using-aws-eb-ec2.png">
+</picture>
 
 ## Method
 we need to create a churn service — a service in Python that will serve the
@@ -55,7 +63,7 @@ service for the probability of churn, and if it’s high enough, then we send a 
  <img alt="Serving-Docker" src="imgs/serving-docker.png">
 </picture>
 
-## Serving Elastic Beanstalk app
+## Serving Elastic Beanstalk app locally
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="imgs/serving-eb-local.png">
  <source media="(prefers-color-scheme: light)" srcset="imgs/serving-eb-local.png">
@@ -67,6 +75,44 @@ service for the probability of churn, and if it’s high enough, then we send a 
  <source media="(prefers-color-scheme: dark)" srcset="imgs/serving-eb-ec2-aws.png">
  <source media="(prefers-color-scheme: light)" srcset="imgs/serving-eb-ec2-aws.png">
  <img alt="Serving-EB" src="imgs/serving-eb-ec2-aws.png">
+</picture>
+
+## Streamlit app
+
+### Batch
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/app-batch-data-upload-txt-dict.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/app-batch-data-upload-txt-dict.png">
+ <img alt="Streamlit-batch-data-upload" src="imgs/app-batch-data-upload-txt-dict.png">
+</picture>
+
+### Data Form Fillup
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/streamlit-1.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/streamlit-1.png">
+ <img alt="Streamlit-1" src="imgs/streamlit-1.png">
+</picture>
+
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/streamlit-2.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/streamlit-2.png">
+ <img alt="Streamlit-2" src="imgs/streamlit-2.png">
+</picture>
+
+
+### Prediction
+#### Churn
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/prediction-churn.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/prediction-churn.png">
+ <img alt="churn" src="imgs/prediction-churn.png">
+</picture>
+
+#### No Churn
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/prediction-no-churn.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/prediction-no-churn.png">
+ <img alt="no-churn" src="imgs/prediction-no-churn.png">
 </picture>
 
 ## How to setup - install all the required libraries from Pipenv.lock
