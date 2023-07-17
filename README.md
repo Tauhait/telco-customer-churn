@@ -7,16 +7,16 @@ Data from https://www.kaggle.com/blastchar/telco-customer-churn
 Suppose we have a service for running marketing campaigns. For each customer, it needs to determine the probability of churn, and if it’s high enough, it will send a promotional email with discounts. Of course, this service needs to use our model to decide whether it should send an email.
 
 ## Tested the working of the app 
-✅ Flask web service
+> ✅ Flask web service
 
-✅ Docker 
+> ✅ Docker  
 
-✅ AWS EC2 & Elastic Beanstalk
+> ✅ AWS EC2 & Elastic Beanstalk
 
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="imgs/prediction-using-aws-eb-ec2.png">
- <source media="(prefers-color-scheme: light)" srcset="imgs/prediction-using-aws-eb-ec2.png">
- <img alt="churn" src="imgs/prediction-using-aws-eb-ec2.png">
+ <source media="(prefers-color-scheme: dark)" srcset="imgs/aws-jupyter-notebook.png">
+ <source media="(prefers-color-scheme: light)" srcset="imgs/aws-jupyter-notebook.png">
+ <img alt="aws-jupyter-notebook" src="imgs/aws-jupyter-notebook.png">
 </picture>
 
 ## Method
