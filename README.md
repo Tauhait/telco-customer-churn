@@ -1,4 +1,4 @@
-# telco-customer-churn
+# Telco-Customer-Churn-Prediction
 Predict behavior to retain customers
 
 Data from https://www.kaggle.com/blastchar/telco-customer-churn
@@ -132,6 +132,9 @@ AWS Elastic Beanstalk create env, run locally and remote:
 > eb init -p docker churn-serving
 > eb local run --port 9696
 > eb create churn-serving-env
+
+Streamlit run
+> pipenv run streamlit run app.py
 
 ## Issues to look out for - 
 • https://github.com/awsdocs/aws-elastic-beanstalk-developer-guide/issues/149
